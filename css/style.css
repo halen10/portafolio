@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #000;
+}
+nav{
+    background-color: rgba(0, 0, 0);
+    height: 70px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+}
+.bars{
+    color: #fff;
+    font-size: 2em;
+    margin: 20px 30px;
+    display: none;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 20px 0;
+}
+li{
+    display: inline;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition: all 1s ease;
+}
+a:hover, .active{
+    color: rgb(255, 153, 0);
+}
+
+/* general */
+h2{
+    background-color: rgb(255, 153, 0);
+    text-align: center;
+}
+
+/* skills, projects */
+.container{
+    border: solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: auto;
+    padding: 20px;
+    gap: 10px;
+}
+.container > div{
+    color: #fff;
+    border: solid 1px;
+    min-width: 200px;
+    min-height: 200px;
+    text-align: center;
+    align-content: center;
+}
+.skill{
+    font-size: 9em;
+    padding-top: 25px;
+}
+
+/* form */
+form{
+    padding: 20px;
+}
+.registro{
+    display: grid;
+    grid-template-columns: 70px auto;
+    gap: 10px;
+    margin: 10px auto;
+    width: 90%;
+}
+label,input{
+    font-size: 15px;
+    padding: 5px;
+}
+label{
+    color: #fff;
+}
+input{
+    color: #000;
+}
+.enviar{
+    display: block;
+    background-color: rgb(255, 153, 0);
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    transition: all 1s ease;
+}
+.enviar:hover{
+    background-color: rgb(226, 139, 8);
+}
+
+/* nav reponsive */
+
+@media screen and (max-width: 450px) {
+    .bars{
+        display: block;
+    }
+    ul{
+        display: block;
+        height: 250px;
+        background-color: rgb(255, 153, 0);
+        display: none;
+    }
+    li{
+        padding: 10px 0;
+        margin: 5px;
+        
+        background-color: rgb(226, 139, 8);
+        display: block;
+    }
+}
